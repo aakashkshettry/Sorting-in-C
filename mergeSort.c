@@ -1,18 +1,21 @@
 #include<stdio.h>
-int arr[20];       // array to be sorted
+int arr[20];						// array to be sorted
+void split(int arr[],int p,int r);
+void merge(int arr[],int p,int q,int r);
 int main()
 {
   int n,i;
-  printf("Enter the size of array\n");  // input the size of the array
+  printf("Enter the size of array\n");  		// input the size of the array
   scanf("%d",&n);
   printf("Enter the elements:");
   for(i=0;i<n;i++)
     scanf("%d",&arr[i]);				//input of the size of the array
-  
   split(arr,0,n-1);  					// splitting the array
-  printf("Sorted array:");  			// printing sorted array
-  for(i=0;i<n;i++)
-    printf("%d",arr[i]);
+  printf("Sorted array:");  				// printing sorted array
+  for(i=0;i<n;i++){
+	printf("%d",arr[i]);
+	  printf("\n");
+     }
   return 0;
 } 
 
