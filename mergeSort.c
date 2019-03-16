@@ -11,7 +11,7 @@ int main()
   for(i=0;i<n;i++)
     scanf("%d",&arr[i]);				//input of the size of the array
   split(arr,0,n-1);  					// splitting the array
-  printf("Sorted array:");  				// printing sorted array
+  printf("Sorted array:\n");  				// printing sorted array
   for(i=0;i<n;i++){
 	printf("%d",arr[i]);
 	  printf("\n");
