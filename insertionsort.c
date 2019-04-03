@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	//Bubble Sort 
+	//insertion Sort 
 	int a[10],round,n,i,j,temp;
 	printf("How many numbers do you want to sort?? ");
 	scanf("%d",&n);
